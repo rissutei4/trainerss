@@ -1,43 +1,102 @@
+@font-face {
+    font-family: 'Metropolis-Medium';
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+    url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
-*{
+@font-face {
+    font-family: 'Bebas Neue-Regular';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+    url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis-Light';
+    src: url('../fonts/Metropolis-Light.eot');
+    src: url('../fonts/Metropolis-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Light.woff2') format('woff2'),
+    url('../fonts/Metropolis-Light.woff') format('woff'),
+    url('../fonts/Metropolis-Light.ttf') format('truetype'),
+    url('../fonts/Metropolis-Light.svg#Metropolis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
     margin: 0;
     padding: 0;
 }
 
- header{
-  background-color: rgba(0, 0, 0, 0.65);
-    padding: 24px 0 12px;
+header {
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: url("../images/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    padding: 0 25px;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
+    padding-top: 34px;
+    margin-bottom: 35px;
 }
 
-header .container.d-flex{
-   display: flex;
+header .container.d-flex {
     width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
     text-align: center;
     outline: none;
 }
 
+.header_line {
+    border-top: 2px solid #464646;
+    width: 100%;
+    display: flex;
+    margin-bottom: 21px;
+}
 
-header form{
+.nav_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 26px;
+}
+
+
+header form {
     width: 208px;
     height: 42px;
     border-radius: 3px;
     background-color: #ebebeb;
     display: flex;
-    justify-content:space-between; 
+    justify-content: space-between;
 }
 
-header form input{
+header form input {
     background-color: transparent;
     border: none;
     width: 75%;
@@ -47,8 +106,10 @@ header form input{
     color: #959595;
     text-transform: uppercase;
     outline: none;
+    font-family: 'Metropolis-Medium', sans-serif;
 }
-header form button{
+
+header form button {
     width: 23%;
     height: 42px;
     text-align: center;
@@ -56,46 +117,161 @@ header form button{
     background-color: transparent;
     border: none;
     padding-top: 6px;
-    
+
 }
 
-.btn{
-    font-family: Metropiolis Medium, sans-serif;
-    text-transform:uppercase;
+.btn {
+    font-family: 'Metropolis-Medium', sans-serif;
+    text-transform: uppercase;
     font-size: 15px;
-    min-width:169px;
-    height:42px;
-    color:white;
+    min-width: 169px;
+    height: 42px;
+    color: white;
     background-color: #252525;
     display: block;
     box-sizing: border-box;
-    padding:11px 0px;
-    border-radius: 3px; 
+    padding: 11px 0;
+    border-radius: 3px;
 }
 
-a img{
+.social_icons {
+    margin-right: 23px;
+}
+
+a img {
     padding-right: 14px;
 }
 
-.grey{
-  background-color: #464646;
+.grey {
+    background-color: #464646;
 }
-.red{
-   background-color: #fa090a; 
+
+.red {
+    background-color: #fa090a;
 }
 
 ul {
     list-style-type: none;
 }
 
-li{
-    text-transform:uppercase;
+li {
+    text-transform: uppercase;
     text-decoration: none;
     outline: none;
     display: inline;
+    font-family: 'Bebas Neue-Regular', sans-serif;
 }
-li a{
-    color:white;
+
+li a {
+    color: white;
     font-size: 25px;
     margin-right: 20px;
+}
+
+section {
+    background-image: url(../images/section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 68px 0;
+}
+
+.title_container {
+    max-width: 370px;
+    margin: auto;
+}
+
+section h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Bebas Neue-Regular', sans-serif;
+    text-transform: uppercase;
+}
+
+.ft_color {
+    background-color: #010006;
+}
+
+.footer_cont {
+    max-width: 979px;
+    margin: auto;
+    padding: 76px 0 53px;
+}
+
+.footer_cont p {
+    color: #d1d1d2;
+    font-size: 18px;
+    font-family: 'Metropolis-Light', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input {
+    background-color: #ffffff;
+    color: #6e7279;
+    margin-bottom: 9px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    padding: 15px 107px 15px 25px;
+    text-transform: uppercase;
+    margin-right: 33px;
+}
+
+.newsletter button {
+    background-color: #ff0000;
+    color: #faf9f5;
+    border: none;
+    padding: 16px 71px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Metropolis-Light', sans-serif;
+    box-sizing: border-box;
+}
+.content{
+    min-height:1010px;
+    background-color: #ffffff;
+}
+footer {
+    background-color: #252525;
+    padding: 62px 28px;
+
+}
+
+.after_ft {
+    width: 100%;
+    padding-top: 64px;
+    background-color: #010006;
+}
+
+.logo_footer {
+    margin-bottom: 54px;
+}
+
+.lots_links a {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Metropolis-Medium', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .lots_links a {
+    margin-bottom: 23px;
 }
