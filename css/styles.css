@@ -150,22 +150,47 @@ a img {
     background-color: #fa090a;
 }
 
-ul {
+.nav_container nav ul {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    color: white;
 }
 
-li {
+.nav_container nav ul li {
+    margin-left: 24px;
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
     display: inline;
     font-family: 'Bebas Neue-Regular', sans-serif;
+    color: white;
+}
+a.btn i{
+    margin-right: 14px;
 }
 
-li a {
+.nav_container nav ul li a {
     color: white;
+    text-decoration: none;
+    text-transform: uppercase;
     font-size: 25px;
-    margin-right: 20px;
+}
+
+.nav_container nav ul li:hover:after {
+    background-color: darkred;
+    width: 100%;
+
+}
+
+.nav_container nav ul li:after {
+    display: block;
+    width: 0;
+    content: "";
+    height: 1px;
+    background-color: transparent;
+    margin-top: 33px;
+    transition: 0.4s;
 }
 
 section {
