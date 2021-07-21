@@ -271,11 +271,6 @@ footer {
 
 }
 
-.after_ft {
-    width: 100%;
-    padding-top: 64px;
-    background-color: #010006;
-}
 
 .logo_footer {
     margin-bottom: 54px;
@@ -289,8 +284,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 783px;
+    margin: auto;
 }
 
+.social_icons{
+    margin-bottom: 23px;
+}
 .f_links {
     display: flex;
     justify-content: space-between;
@@ -299,4 +299,10 @@ footer {
 
 footer .lots_links a {
     margin-bottom: 23px;
+}
+
+.after_ft {
+    width: 100%;
+    padding-top:32px;
+    background-color: #010006;
 }
