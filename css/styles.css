@@ -49,7 +49,9 @@ header {
     background-color: rgba(0, 0, 0, 0.65);
     width: 100%;
     padding: 0 25px;
-    position: fixed;
+    position: absolute;
+    z-index: 1;
+    top:0;
 }
 
 .container {
@@ -193,8 +195,9 @@ a.btn i{
     transition: 0.4s;
 }
 
-section {
+section.banner{
     width: 100%;
+    position: relative;
 }
 
 .title_container {
@@ -202,6 +205,8 @@ section {
     max-width: 370px;
     margin: auto;
     padding: 68px 0;
+    bottom:0;
+    right: 45%;
 }
 
 section img{
