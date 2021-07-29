@@ -15,12 +15,12 @@
         width: 73px;
         overflow: hidden;
         margin-right: 10px;
-    }
 
-    nav {
-        justify-content: center;
     }
-
+    .nav_container{
+        flex-direction: column;
+        align-items: flex-end;
+    }
     .newsletter input {
         padding: 15px 30px 15px 25px;
     }
@@ -51,10 +51,11 @@
         flex-direction: column;
         align-items: flex-end;
     }
-
-    .lots_links{
-
-    }
+.logo_icons {
+    display: flex;
+    max-width: 300px;
+    justify-content: space-evenly;
+}
 }
 
 @media only screen and (max-width: 414px) {
