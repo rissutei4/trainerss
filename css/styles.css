@@ -89,12 +89,13 @@ a {
 }
 
 header form {
-    width: 208px;
+    max-width: 208px;
     height: 42px;
     border-radius: 3px;
     background-color: #ebebeb;
     display: flex;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 header form input {
@@ -111,21 +112,22 @@ header form input {
 }
 
 header form button {
-    width: 23%;
+    width: 23px;
     height: 42px;
     text-align: center;
-    line-height: 42px;
     background-color: transparent;
     border: none;
-    padding-top: 6px;
-
+    font-size: 25px;
+    color: #fa090a;
 }
-
+header form button i{
+    padding:11px 0 11px;
+}
 .btn {
     font-family: 'Metropolis-Medium', sans-serif;
     text-transform: uppercase;
     font-size: 15px;
-    min-width: 169px;
+    width: 169px;
     height: 42px;
     color: white;
     background-color: #252525;
